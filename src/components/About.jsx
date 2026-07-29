@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-
+import Link from "next/link";
 export default function About() {
   return (
     <section
@@ -35,13 +35,16 @@ export default function About() {
 
           {/* Right Side */}
           <div className="flex items-end lg:col-span-4 lg:justify-end">
-            <button className="group inline-flex items-center gap-3 border border-[#d4a64a]/40 px-6 py-4 text-[#d4a64a] transition-all duration-300 hover:bg-[#d4a64a] hover:text-black">
+            <Link
+              href={"#projects"}
+              className="group inline-flex items-center gap-3 border border-[#d4a64a]/40 px-6 py-4 text-[#d4a64a] transition-all duration-300 hover:bg-[#d4a64a] hover:text-black"
+            >
               View Projects
               <ArrowUpRight
                 size={18}
                 className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
