@@ -3,6 +3,7 @@ import minhaj from "@/assets/minhaj.png";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Link from "next/link";
+import { Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -49,7 +50,7 @@ export default function Hero() {
         </div>
 
         {/* Right Card */}
-        <div className="order-3 mt-6 w-full max-w-sm lg:absolute lg:bottom-36 lg:right-8 lg:mt-0">
+        <div className="order-3 z-1 mt-6 w-full max-w-sm lg:absolute lg:bottom-36 lg:right-8 lg:mt-0">
           <div className="rounded-2xl border border-white/30 bg-white/20 p-6 backdrop-blur-xl">
             <h3 className="text-2xl font-bold">10+</h3>
 
@@ -59,6 +60,19 @@ export default function Hero() {
               Developing modern, responsive web applications while continuously
               improving my skills with real-world projects.
             </p>
+            <div className="py-5">
+              <a
+                href="/resume.pdf"
+                download
+                className="group inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/30 px-6 py-3 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl"
+              >
+                <span className="font-semibold">Download Resume</span>
+
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-black text-white transition-transform duration-300 group-hover:translate-y-1">
+                  <Download size={18} />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -76,31 +90,35 @@ export default function Hero() {
         </div>
 
         {/* Social Links */}
-        <div className="pb-8 md:pb-0 order-5 z-1 mt-6 flex items-center gap-4 lg:absolute lg:bottom-10 lg:left-8 lg:mt-0">
-          <Link
-            href="https://github.com/Minhajul-Abdin"
-            target="_blank"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
-          >
-            <FaGithub size={20} />
-          </Link>
+        <div className="pb-8 md:pb-0 order-5 z-1 mt-6 lg:absolute lg:bottom-10 lg:left-8 lg:mt-0">
+          <div className="flex items-center gap-4 ">
+            <Link
+              href="https://github.com/Minhajul-Abdin"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
+            >
+              <FaGithub size={20} />
+            </Link>
 
-          <Link
-            href="https://www.linkedin.com/in/mohammed-minhajul/"
-            target="_blank"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
-          >
-            <FaLinkedinIn size={20} />
-          </Link>
+            <Link
+              href="https://www.linkedin.com/in/mohammed-minhajul/"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
+            >
+              <FaLinkedinIn size={20} />
+            </Link>
 
-          <Link
-            href="https://leetcode.com/u/MohammedMinhajul/"
-            target="_blank"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
-          >
-            <SiLeetcode size={20} />
-          </Link>
+            <Link
+              href="https://leetcode.com/u/MohammedMinhajul/"
+              target="_blank"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-gray-800 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-orange-500 hover:shadow-lg"
+            >
+              <SiLeetcode size={20} />
+            </Link>
+          </div>
         </div>
+
+        {/* Resume */}
       </div>
     </section>
   );
