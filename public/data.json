@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "GoZon",
+    "image": "https://i.ibb.co/0RFXFT9n/image.png",
+    "description": "GoZon is a modern e-commerce platform that allows users to browse products, manage their shopping cart, and place orders through a clean and responsive interface. It offers a smooth shopping experience with features like product categories, secure authentication, and an intuitive user-friendly design.",
+    "tech": ["Next.js","BetterAuth", "Mongodb", "Tailwind CSS"],
+    "live": "https://gozon-client.vercel.app/",
+    "github": "https://github.com/Minhajul-Abdin/Gozon-Client-Side"
+  },
+  {
+    "id": 2,
+    "title": "Suncart",
+    "image": "https://i.ibb.co/0yrnf5yX/image.png",
+    "description": "Suncart is a modern e-commerce platform designed to provide a seamless online shopping experience. It offers a wide range of quality products with an intuitive interface, secure checkout, and fast performance, making shopping simple, convenient, and reliable for every customer.",
+    "tech": ["Javascript","Next.js", "MongoDB", "BetterAuth"],
+    "live": "https://suncart-pi.vercel.app/",
+    "github": "https://github.com/Minhajul-Abdin/suncart"
+  },
+  {
+    "id": 3,
+    "title": "StudyNook ",
+    "image": "https://i.ibb.co/HpYRk6xg/image.png",
+    "description": "StudyNook is a responsive MERN stack web application that allows users to discover, book, and manage study rooms with ease. It features secure authentication, an intuitive interface, and an admin dashboard for efficient room and booking management.",
+    "tech": ["Javascript","Next.js", "MongoDB"],
+    "live": "studynook-self.vercel.app",
+    "github": "https://github.com/Minhajul-Abdin/StudyNook"
+  }
+]
