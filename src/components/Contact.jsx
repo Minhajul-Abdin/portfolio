@@ -1,5 +1,8 @@
 "use client";
-
+import { Mail } from "lucide-react";
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#0A0A0A] px-6 py-24 md:px-12">
@@ -19,6 +22,47 @@ export default function Contact() {
               Have a project in mind or just want to chat? Lets connect and
               build something amazing together.
             </p>
+
+            {/* Email */}
+            <div className="mt-8">
+              <p className="mb-2 text-sm uppercase tracking-[0.25em] text-gray-500">
+                Email Me
+              </p>
+
+              <a
+                href="mailto:your.email@example.com"
+                className="inline-flex items-center gap-3 rounded-xl border border-[#d4a64a]/30 bg-[#d4a64a]/10 px-5 py-3 text-xl font-extrabold text-[#d4a64a] transition-all duration-300 hover:border-[#d4a64a] hover:bg-[#d4a64a]/20"
+              >
+                <Mail size={22} />
+                minhajul000abdin@gmail.com
+              </a>
+            </div>
+
+            {/* Socials */}
+            <div className="flex items-center gap-4 py-5">
+              <Link
+                href="https://www.linkedin.com/in/mohammed-minhajul/"
+                target="_blank"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur transition hover:bg-white hover:text-[#d4a64a]"
+              >
+                <FaLinkedinIn size={20} />
+              </Link>
+              <Link
+                href="https://github.com/Minhajul-Abdin"
+                target="_blank"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur transition hover:bg-white hover:text-[#d4a64a]"
+              >
+                <FaGithub size={20} />
+              </Link>
+
+              <Link
+                href="https://leetcode.com/u/MohammedMinhajul/"
+                target="_blank"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur transition hover:bg-white hover:text-[#d4a64a]"
+              >
+                <SiLeetcode size={20} />
+              </Link>
+            </div>
 
             {/* Decorative Blur */}
             <div className="absolute -left-20 top-20 -z-10 h-56 w-56 rounded-full bg-purple-500/20 blur-[120px]" />
