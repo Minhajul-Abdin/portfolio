@@ -23,7 +23,7 @@
     "image": "https://i.ibb.co/HpYRk6xg/image.png",
     "description": "StudyNook is a responsive MERN stack web application that allows users to discover, book, and manage study rooms with ease. It features secure authentication, an intuitive interface, and an admin dashboard for efficient room and booking management.",
     "tech": ["Javascript","Next.js", "MongoDB"],
-    "live": "studynook-self.vercel.app",
+    "live": "https://studynook-self.vercel.app",
     "github": "https://github.com/Minhajul-Abdin/StudyNook"
   }
 ]
